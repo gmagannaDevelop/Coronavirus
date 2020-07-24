@@ -1,6 +1,5 @@
 # Renv
-renv/library/
-renv/staging/
+renv/
 
 # Intermediate knittting :
 src/*.html
