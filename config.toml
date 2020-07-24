@@ -1,0 +1,11 @@
+
+[directories]
+source="src/"
+dest="build/"
+
+[paths]
+pandoc="/Applications/RStudio.app/Contents/MacOS/pandoc"
+
+[data]
+owid="covid-19-data/public/data/owid-covid-data.csv"
+

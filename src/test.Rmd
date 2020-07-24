@@ -1,0 +1,67 @@
+---
+title: "Corona"
+author: "Gustavo Magaña López"
+date: "7/18/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Coronavirus
+
+Fuck this shit, fuck López-Gatell, fuck AMLO, fuck everyone. Stay at HOMEEEEE.
+
+```{r packages}
+library(tidyverse)
+library(coronavirus)
+library(RcppTOML)
+library(glue)
+```
+
+
+```{r function.definition, echo=FALSE}
+country.scatter.plot <- function(covid.df, x){
+  cov.country.plot <- filter(covid.df, country == x)
+  p <- ggplot(data = cov.country.plot) +
+    geom_point(mapping = aes(x = date, y = cases, colour = type))
+  print(p)
+}
+```
+
+## Select the data
+
+You can also embed plots, for example:
+
+```{r pick.countries, echo=FALSE}
+countries.of.interest <- c("United Kingdom", "Spain", 
+                           "Italy", "Sweden", "France", 
+                           "United States", "Chile", "Peru",
+                           "Brazil", "Ecuador", "Mexico", 
+                           "Canada", "Germany", "Colombia",
+                           "Argentina")
+my.cov <- filter(coronavirus, country %in% countries.of.interest)
+```
+
+
+## México 
+
+```{r mejico.majico}
+country.scatter.plot(my.cov, "Mexico")
+```
+
+## Italia 
+
+```{r italia.majica}
+country.scatter.plot(coronavirus, "Italy")
+```
+
+```{r france.majique}
+country.scatter.plot(my.cov, "France")
+country.scatter.plot(my.cov, "United Kingdom")
+country.scatter.plot(my.cov, "Brazil")
+```
+
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.

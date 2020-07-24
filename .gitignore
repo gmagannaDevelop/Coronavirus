@@ -1,3 +1,13 @@
+# Renv
+renv/library/
+renv/staging/
+
+# Intermediate knittting :
+src/*.html
+
+# macOS
+.DS_Store
+
 # History files
 .Rhistory
 .Rapp.history

@@ -172,8 +172,8 @@
       "RemoteRepo": "coronavirus",
       "RemoteUsername": "RamiKrispin",
       "RemoteRef": "master",
-      "RemoteSha": "fb5dee403541a375a87240d0fe6d390e76909f86",
-      "Hash": "b6fa44a37b074a1504672da9cf9f08d6"
+      "RemoteSha": "b87bd5ae1f44fa8b83646272b6f9a7ff0e67b440",
+      "Hash": "bc20e8ab88117c5d55034a4117e69c38"
     },
     "covr": {
       "Package": "covr",
