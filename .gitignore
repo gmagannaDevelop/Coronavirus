@@ -1,3 +1,6 @@
+# git-related merge conflicts:
+conflicts/
+
 # Renv
 renv/
 
@@ -6,6 +9,9 @@ src/*.html
 
 # macOS
 .DS_Store
+
+# Data
+covid-19-data/
 
 # History files
 .Rhistory
