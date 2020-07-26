@@ -8,4 +8,5 @@ pandoc="/Applications/RStudio.app/Contents/MacOS/pandoc"
 
 [data]
 owid="covid-19-data/public/data/owid-covid-data.csv"
+build_owid="../covid-19-data/public/data/owid-covid-data.csv"
 
